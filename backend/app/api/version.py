@@ -3,5 +3,9 @@ from fastapi import APIRouter
 router = APIRouter()
 
 @router.get("/")
-def version():
-    return {"version": "1.0.0"}
+def app_info():
+    return {
+        "app_name": "Enterprise Platform",
+        "version": "1.0.0",
+        "environment": "development"
+    }

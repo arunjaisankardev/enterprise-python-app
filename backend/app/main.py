@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from app.api.health import router as health_router
-from app.api.version import router as version_router
+from backend.app.api.health import router as health_router
+from backend.app.api.version import router as version_router
 
 app = FastAPI(title="Enterprise Backend API")
 
