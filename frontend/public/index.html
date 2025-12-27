@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enterprise Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Enterprise Platform</h1>
+  <button onclick="checkHealth()">Check Backend</button>
+  <pre id="output"></pre>
+
+  <script>
+    async function checkHealth() {
+      const res = await fetch("http://localhost:8000/health");
+      document.getElementById("output").innerText =
+        JSON.stringify(await res.json(), null, 2);
+    }
+  </script>
+</body>
+</html>
