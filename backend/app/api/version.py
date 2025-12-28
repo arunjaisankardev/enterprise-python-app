@@ -6,6 +6,6 @@ router = APIRouter()
 def app_info():
     return {
         "app_name": "Enterprise Platform",
-        "version": "1.0.0",
+        "version": "1.0.1-ci-test",
         "environment": "development"
     }
