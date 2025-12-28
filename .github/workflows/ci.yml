@@ -18,11 +18,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python -m venv venv
-          source venv/bin/activate
           pip install -r requirements.txt
 
-      - name: Run basic check
+      - name: Run basic import check
         run: |
-          source venv/bin/activate
           python -c "import backend.app.main"
