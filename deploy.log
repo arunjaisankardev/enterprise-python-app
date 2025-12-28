@@ -18,3 +18,30 @@ From github.com:arunjaisankardev/enterprise-python-app
 From github.com:arunjaisankardev/enterprise-python-app
  * branch            main       -> FETCH_HEAD
 ✅ No changes detected, deployment skipped
+💾 Backing up current version...
+🔄 Pulling latest code from main...
+From github.com:arunjaisankardev/enterprise-python-app
+ * branch            main       -> FETCH_HEAD
+From github.com:arunjaisankardev/enterprise-python-app
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+📦 Installing dependencies...
+Requirement already satisfied: fastapi in ./.venv/lib/python3.12/site-packages (from -r requirements.txt (line 1)) (0.128.0)
+Requirement already satisfied: uvicorn in ./.venv/lib/python3.12/site-packages (from -r requirements.txt (line 2)) (0.40.0)
+Requirement already satisfied: requests in ./.venv/lib/python3.12/site-packages (from -r requirements.txt (line 3)) (2.32.5)
+Requirement already satisfied: starlette<0.51.0,>=0.40.0 in ./.venv/lib/python3.12/site-packages (from fastapi->-r requirements.txt (line 1)) (0.50.0)
+Requirement already satisfied: pydantic>=2.7.0 in ./.venv/lib/python3.12/site-packages (from fastapi->-r requirements.txt (line 1)) (2.12.5)
+Requirement already satisfied: typing-extensions>=4.8.0 in ./.venv/lib/python3.12/site-packages (from fastapi->-r requirements.txt (line 1)) (4.15.0)
+Requirement already satisfied: annotated-doc>=0.0.2 in ./.venv/lib/python3.12/site-packages (from fastapi->-r requirements.txt (line 1)) (0.0.4)
+Requirement already satisfied: click>=7.0 in ./.venv/lib/python3.12/site-packages (from uvicorn->-r requirements.txt (line 2)) (8.3.1)
+Requirement already satisfied: h11>=0.8 in ./.venv/lib/python3.12/site-packages (from uvicorn->-r requirements.txt (line 2)) (0.16.0)
+Requirement already satisfied: charset_normalizer<4,>=2 in ./.venv/lib/python3.12/site-packages (from requests->-r requirements.txt (line 3)) (3.4.4)
+Requirement already satisfied: idna<4,>=2.5 in ./.venv/lib/python3.12/site-packages (from requests->-r requirements.txt (line 3)) (3.11)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./.venv/lib/python3.12/site-packages (from requests->-r requirements.txt (line 3)) (2.6.2)
+Requirement already satisfied: certifi>=2017.4.17 in ./.venv/lib/python3.12/site-packages (from requests->-r requirements.txt (line 3)) (2025.11.12)
+Requirement already satisfied: annotated-types>=0.6.0 in ./.venv/lib/python3.12/site-packages (from pydantic>=2.7.0->fastapi->-r requirements.txt (line 1)) (0.7.0)
+Requirement already satisfied: pydantic-core==2.41.5 in ./.venv/lib/python3.12/site-packages (from pydantic>=2.7.0->fastapi->-r requirements.txt (line 1)) (2.41.5)
+Requirement already satisfied: typing-inspection>=0.4.2 in ./.venv/lib/python3.12/site-packages (from pydantic>=2.7.0->fastapi->-r requirements.txt (line 1)) (0.4.2)
+Requirement already satisfied: anyio<5,>=3.6.2 in ./.venv/lib/python3.12/site-packages (from starlette<0.51.0,>=0.40.0->fastapi->-r requirements.txt (line 1)) (4.12.0)
+♻ Restarting backend service...
+✅ Deployment complete
